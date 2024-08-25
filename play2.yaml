@@ -1,0 +1,7 @@
+---
+- name: task for slave2
+  hosts: slave2
+  become: true
+  tasks:
+   - name: install apache in slave2
+     apt: name=apache2 state=latest
