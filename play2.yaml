@@ -1,6 +1,6 @@
 ---
 - name: task for slave2
-  hosts: slaves
+  hosts: slave2
   become: true
   tasks:
   - name: install apache2 in slave2
