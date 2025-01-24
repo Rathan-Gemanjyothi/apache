@@ -1,9 +1,9 @@
 ---
 - name: task for slave2
-  hosts: all
+  hosts: slaves
   become: true
   tasks:
-  - name: install nginx in slave1
+  - name: install apache2 in slave2
     apt: name=apache2 state=latest
   - name: Deploy static website
     copy: src=index.html dest=/var/www/html/
